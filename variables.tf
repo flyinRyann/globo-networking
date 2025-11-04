@@ -20,6 +20,11 @@ variable "environment" {
   default     = "development"
 }
 
+variable "billing_code" {
+  type        = string
+  description = "(Required) Billing code for network resources"
+}
+
 variable "cidr_block" {
   type        = string
   description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
@@ -34,4 +39,3 @@ variable "public_subnets" {
     public-2 = "10.42.11.0/24"
   }
 }
-
